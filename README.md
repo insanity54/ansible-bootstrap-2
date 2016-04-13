@@ -25,7 +25,7 @@ In your playbook's main.yml, disable gathering facts. Then add this ansible-boot
     - {role: bootstrap, tags: bootstrap} # <-- python is installed here, followed by gather_facts (setup module)
     - {role: pip, tags: pip}
     - {role: ruby, tags: ruby}
-   - {role: ufw, tags: ufw}
+    - {role: ufw, tags: ufw}
     - {role: postfix, tags: postfix}
     - {role: apache2, tags: apache2}
     - {role: nagios, tags: nagios}

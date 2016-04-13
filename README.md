@@ -9,7 +9,19 @@ greets
 
 ## Usage
 
-Download this role using ansible-galaxy.
+Download this role using ansible-galaxy. I like to use a `requirements.yml` file--
+
+```
+---
+
+- src: insanity54.ipfs
+  name: ipfs
+- src: insanity54.ansible-bootstrap
+  name: bootstrap
+```
+
+that way, I can just run `ansible-galaxy install -r requirements.yml -p ./roles`
+
 
 In your playbook's main.yml, disable gathering facts. Then add this ansible-bootstrap role as your first role. Example playbook--
 

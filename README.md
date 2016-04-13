@@ -16,7 +16,7 @@ Download this role using ansible-galaxy. I like to use a `requirements.yml` file
 
 - src: insanity54.ipfs
   name: ipfs
-- src: insanity54.ansible-bootstrap
+- src: insanity54.bootstrap
   name: bootstrap
 ```
 
